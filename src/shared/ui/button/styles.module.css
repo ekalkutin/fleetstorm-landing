@@ -1,0 +1,11 @@
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: 8px 16px;
+  border-radius: 1rem;
+}
+
+.primary {
+  color: var(--app-color-background);
+  background-color: var(--app-color-primary);
+}
