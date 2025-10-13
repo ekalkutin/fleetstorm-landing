@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Button } from 'shared/ui/button/button';
 import { Container } from 'shared/ui/container/container';
-import { Spacer } from 'shared/ui/spaces/spacer';
+import { Spacer } from 'shared/ui/spacer/spacer';
 
 import styles from './styles.module.css';
 
