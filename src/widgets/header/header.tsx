@@ -1,28 +1,29 @@
-import { Button, Flex, Layout, Space } from 'antd';
 import React from 'react';
 
+import { Button } from 'shared/ui/button/button';
 import { Container } from 'shared/ui/container/container';
+import { Spacer } from 'shared/ui/spaces/spacer';
 
 import styles from './styles.module.css';
 
 export const Header: React.FC = () => {
   return (
-    <Layout.Header className={styles.header}>
+    <header className={styles.header}>
       <Container>
-        <Flex align='center' justify='space-between'>
-          Fleetstorm
-          <Flex gap={'middle'} className={styles.container}>
-            <Button type='text'>Home</Button>
-            <Button type='text'>Features</Button>
-            <Button type='text'>Pricing</Button>
-            <Button type='text'>Contact</Button>
-          </Flex>
-          <Space>
-            <Button type='text'>Войти</Button>
+        <nav>
+          <div>Logo</div>
+          <Spacer>
+            <Button>Возможности</Button>
+            <Button>Демо</Button>
+            <Button>Стоимость</Button>
+            <Button>Контакты</Button>
+          </Spacer>
+          <Spacer>
+            <Button>Войти</Button>
             <Button type='primary'>Начать бесплатно</Button>
-          </Space>
-        </Flex>
+          </Spacer>
+        </nav>
       </Container>
-    </Layout.Header>
+    </header>
   );
 };
