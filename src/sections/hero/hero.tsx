@@ -11,9 +11,9 @@ import styles from './styles.module.css';
 export const Hero: React.FC = () => {
   return (
     <section className={clsx(styles.section, styles.background)}>
-      <Container>
+      <Container className={styles.container}>
         <div>
-          <div>
+          <div className={styles.welcome}>
             <h1>Будущее управления автопарком уже здесь.</h1>
             <h2>
               Автоматизация бронирования, управление автопарком, отслеживание
