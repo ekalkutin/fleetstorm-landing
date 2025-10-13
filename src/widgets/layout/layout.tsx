@@ -1,18 +1,14 @@
-import { Layout as AntLayout } from 'antd';
-import React from 'react';
-import { Outlet } from 'react-router';
+import React, { PropsWithChildren } from 'react';
 
 import { Header } from 'widgets/header/header';
 
-const { Content } = AntLayout;
+type Props = {} & PropsWithChildren;
 
-export const Layout: React.FC = () => {
+export const Layout: React.FC<Props> = props => {
   return (
-    <AntLayout>
+    <div>
       <Header />
-      <Content>
-        <Outlet />
-      </Content>
-    </AntLayout>
+      {props.children}
+    </div>
   );
 };

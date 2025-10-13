@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Button } from 'shared/ui/button/button';
 import { Container } from 'shared/ui/container/container';
-import { Spacer } from 'shared/ui/spacer/spacer';
+import { Space } from 'shared/ui/space/space';
 
 import styles from './styles.module.css';
 
@@ -12,16 +12,16 @@ export const Header: React.FC = () => {
       <Container>
         <nav>
           <div>Logo</div>
-          <Spacer>
+          <Space>
             <Button>Возможности</Button>
             <Button>Демо</Button>
             <Button>Стоимость</Button>
             <Button>Контакты</Button>
-          </Spacer>
-          <Spacer>
+          </Space>
+          <Space>
             <Button>Войти</Button>
             <Button type='primary'>Начать бесплатно</Button>
-          </Spacer>
+          </Space>
         </nav>
       </Container>
     </header>
