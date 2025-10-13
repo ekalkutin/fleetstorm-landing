@@ -1,0 +1,21 @@
+import fs from 'node:fs';
+import path from 'node:path';
+
+import renderToString from 'app/server-entry';
+
+const render = () => {
+  const htmlPath = path.resolve(process.cwd(), 'build', 'client', 'index.html');
+  const cssPath = path.resolve(process.cwd(), 'build', 'server', 'main.css');
+
+  const rendered = renderToString();
+  const html = fs.readFileSync(htmlPath, { encoding: 'utf-8' });
+  const css = fs.readFileSync(cssPath, { encoding: 'utf-8' });
+
+  // Replace the root div with the server-rendered content, replace CSS to inline-css
+  return html
+    .replace('<link href="/main.css" rel="stylesheet">', '')
+    .replace('</head>', `<style>${css}</style>`)
+    .replace('<div id="root"></div>', `<div id="root">${rendered}</div>`);
+};
+
+export default render;

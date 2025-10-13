@@ -22,9 +22,11 @@
     "lib": ["ESNext", "DOM"],
 
     // Paths
-
     "rootDir": "src/",
     "baseUrl": "src/",
+    "paths": {
+      "app/*": ["app/*"]
+    },
 
     // Misc
     "jsx": "react-jsx"

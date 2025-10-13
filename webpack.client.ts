@@ -23,7 +23,7 @@ export default merge<Configuration & DevServerConfiguration>(sharedConfig, {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'src/public/index.html',
+      template: 'src/app/public/index.html',
     }),
   ],
 });
