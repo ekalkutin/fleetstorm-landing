@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Hero } from 'pages/home/components/hero/hero';
+import { Hero } from 'sections/hero/hero';
 import { Layout } from 'widgets/layout/layout';
 import './styles/index.css';
 

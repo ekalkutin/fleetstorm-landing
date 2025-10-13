@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 
-import { Header } from 'widgets/header/header';
+import { Header } from '../header/header';
 
 type Props = {} & PropsWithChildren;
 

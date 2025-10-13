@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Button } from 'shared/ui/button/button';
-import { Container } from 'shared/ui/container/container';
-import { Space } from 'shared/ui/space/space';
+import { Button } from 'components/button/button';
+import { Container } from 'components/container/container';
+import { Space } from 'components/space/space';
 
 import styles from './styles.module.css';
 
