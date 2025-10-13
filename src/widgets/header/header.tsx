@@ -10,7 +10,7 @@ export const Header: React.FC = () => {
     <Layout.Header className={styles.header}>
       <Container>
         <Flex align='center' justify='space-between'>
-          Logo
+          Fleetstorm
           <Flex gap={'middle'} className={styles.container}>
             <Button type='text'>Home</Button>
             <Button type='text'>Features</Button>
@@ -18,7 +18,7 @@ export const Header: React.FC = () => {
             <Button type='text'>Contact</Button>
           </Flex>
           <Space>
-            <Button type='primary'>Войти</Button>
+            <Button type='text'>Войти</Button>
             <Button type='primary'>Начать бесплатно</Button>
           </Space>
         </Flex>

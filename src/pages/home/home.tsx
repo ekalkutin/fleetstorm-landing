@@ -1,5 +1,11 @@
 import React from 'react';
 
+import { Hero } from './components/hero/hero';
+
 export const HomePage: React.FC = () => {
-  return <div>Home page</div>;
+  return (
+    <React.Fragment>
+      <Hero />
+    </React.Fragment>
+  );
 };
