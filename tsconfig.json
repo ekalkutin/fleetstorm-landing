@@ -4,7 +4,6 @@
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
-    "noUncheckedIndexedAccess": true,
 
     // Modules
     "moduleResolution": "bundler",
