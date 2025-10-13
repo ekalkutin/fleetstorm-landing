@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    // Type Checking
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noUncheckedIndexedAccess": true,
+
+    // Modules
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+
+    // Emit
+    "noEmit": true,
+
+    // Interop Constraints
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+
+    // Language and Environment
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM"],
+
+    // Paths
+
+    "rootDir": "src/",
+    "baseUrl": "src/",
+
+    // Misc
+    "jsx": "react-jsx"
+  },
+  "include": ["src/**/*"]
+}
