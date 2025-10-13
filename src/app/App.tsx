@@ -1,13 +1,16 @@
+import { ConfigProvider } from 'antd';
 import React from 'react';
 import { RouterProvider } from 'react-router';
-import './styles/index.css';
 
 import { router } from './router';
+import { theme } from './styles/theme';
+
+import './styles/index.css';
 
 export const App: React.FC = () => {
   return (
-    <div>
+    <ConfigProvider theme={theme}>
       <RouterProvider router={router} />
-    </div>
+    </ConfigProvider>
   );
 };
