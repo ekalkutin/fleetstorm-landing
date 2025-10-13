@@ -9,7 +9,7 @@ import sharedConfig from './webpack.base';
 const BUILD_PATH = path.resolve(__dirname, 'build', 'server');
 
 export default merge<Configuration>(sharedConfig, {
-  entry: './src/server/index.ts',
+  entry: './src/app/server/index.ts',
   target: 'node',
   externals: [nodeExternals()],
   output: {

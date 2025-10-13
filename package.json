@@ -36,6 +36,7 @@
     "@types/react-dom": "^19.2.2",
     "@types/webpack-node-externals": "^3.0.4",
     "copy-webpack-plugin": "^13.0.1",
+    "cross-env": "^10.1.0",
     "css-minimizer-webpack-plugin": "^7.0.2",
     "esbuild-loader": "^4.4.0",
     "eslint": "^9.37.0",
