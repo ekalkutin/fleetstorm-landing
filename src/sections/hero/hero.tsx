@@ -10,23 +10,24 @@ import styles from './styles.module.css';
 
 export const Hero: React.FC = () => {
   return (
-    <section className={clsx(styles.section, styles.background)}>
+    <section className={clsx(styles.section)}>
       <Container className={styles.container}>
-        <div>
-          <div className={styles.welcome}>
-            <h1>Будущее управления автопарком уже здесь.</h1>
+        <div className={styles.welcome}>
+          <div>
+            <h1>Будущее управления автопарком уже здесь</h1>
             <h2>
               Автоматизация бронирования, управление автопарком, отслеживание
               клиентов — всё на одной платформе
             </h2>
-            <Space>
-              <Button type='primary'>
-                Начать бесплатный тест
-                <ArrowRight />
-              </Button>
-              <Button>Забронировать демо</Button>
-            </Space>
           </div>
+
+          <Space>
+            <Button type='primary'>
+              Начать бесплатный тест
+              <ArrowRight />
+            </Button>
+            <Button>Забронировать демо</Button>
+          </Space>
         </div>
       </Container>
     </section>

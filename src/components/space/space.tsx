@@ -1,9 +1,16 @@
+import clsx from 'clsx';
 import React, { PropsWithChildren } from 'react';
 
 import styles from './styles.module.css';
 
-type Props = PropsWithChildren & {};
+type Props = {
+  readonly className?: string;
+} & PropsWithChildren;
 
 export const Space: React.FC<Props> = props => {
-  return <div className={styles.content}>{props.children}</div>;
+  return (
+    <div className={clsx(styles.content, props.className)}>
+      {props.children}
+    </div>
+  );
 };
