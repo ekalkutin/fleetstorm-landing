@@ -21,16 +21,23 @@
   @media (max-width: 550px) {
     flex: 1;
     flex-wrap: wrap;
-
     .cta {
       width: 100%;
     }
   }
+
+  .cta {
+    padding: 12px 28px;
+    min-height: 48px;
+  }
 }
 
-.cta {
-  padding: 12px 28px;
-  min-height: 48px;
+.shortBenefits {
+  @media (max-width: 550px) {
+    flex: 1;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 .welcome {

@@ -33,7 +33,7 @@ export const Hero: React.FC = () => {
             </Button>
           </Space>
 
-          <Space>
+          <Space className={styles.shortBenefits}>
             <div className={styles.shortBenefit}>
               <div className={styles.roundIcon}>
                 <Check size={14} />
