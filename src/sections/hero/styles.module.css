@@ -16,11 +16,16 @@
   flex: 1;
 }
 
+.cta {
+  padding: 12px 28px;
+  min-height: 48px;
+}
+
 .welcome {
   max-width: 850px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 48px;
 
   h1,
   h2 {
@@ -37,4 +42,24 @@
     font-weight: 300;
     color: color-mix(in oklab, #ffffff 70%, transparent);
   }
+}
+
+.shortBenefit {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: white;
+  margin-right: 24px;
+  font-size: 12px;
+}
+
+.roundIcon {
+  height: 36px;
+  width: 36px;
+  display: block;
+  background-color: #0077ff21;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

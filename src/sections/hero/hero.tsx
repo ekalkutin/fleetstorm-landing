@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Check, Lock, Zap } from 'lucide-react';
 import React from 'react';
 
 import { Button } from 'components/button/button';
@@ -22,11 +22,37 @@ export const Hero: React.FC = () => {
           </div>
 
           <Space>
-            <Button type='primary'>
-              Начать бесплатный тест
-              <ArrowRight />
+            <Button className={styles.cta} type='primary'>
+              <Space>
+                Начать бесплатный тест
+                <ArrowRight />
+              </Space>
             </Button>
-            <Button>Забронировать демо</Button>
+            <Button className={styles.cta}>
+              <Space>Начать бесплатный тест</Space>
+            </Button>
+          </Space>
+
+          <Space>
+            <div className={styles.shortBenefit}>
+              <div className={styles.roundIcon}>
+                <Check size={14} />
+              </div>
+              <div>Без кредитной карты</div>
+            </div>
+
+            <div className={styles.shortBenefit}>
+              <div className={styles.roundIcon}>
+                <Zap size={14} />
+              </div>
+              <div>Настройка за 5 минут</div>
+            </div>
+            <div className={styles.shortBenefit}>
+              <div className={styles.roundIcon}>
+                <Lock size={14} />
+              </div>
+              <div>Безопасность данных</div>
+            </div>
           </Space>
         </div>
       </Container>
