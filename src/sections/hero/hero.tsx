@@ -21,7 +21,7 @@ export const Hero: React.FC = () => {
             </h2>
           </div>
 
-          <Space>
+          <Space className={styles.ctaButtonsGroup}>
             <Button className={styles.cta} type='primary'>
               <Space>
                 Начать бесплатный тест

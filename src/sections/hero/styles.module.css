@@ -17,6 +17,17 @@
   flex: 1;
 }
 
+.ctaButtonsGroup {
+  @media (max-width: 550px) {
+    flex: 1;
+    flex-wrap: wrap;
+
+    .cta {
+      width: 100%;
+    }
+  }
+}
+
 .cta {
   padding: 12px 28px;
   min-height: 48px;

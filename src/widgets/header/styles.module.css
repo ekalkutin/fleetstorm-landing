@@ -9,4 +9,10 @@
     justify-content: space-between;
     padding: 24px 0;
   }
+
+  .links {
+    @media (max-width: 867px) {
+      display: none;
+    }
+  }
 }

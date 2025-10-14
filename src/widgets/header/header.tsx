@@ -12,7 +12,7 @@ export const Header: React.FC = () => {
       <Container>
         <nav>
           <div>Logo</div>
-          <Space>
+          <Space className={styles.links}>
             <Button>Возможности</Button>
             <Button>Демо</Button>
             <Button>Стоимость</Button>
