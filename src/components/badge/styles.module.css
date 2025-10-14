@@ -1,0 +1,11 @@
+.container {
+  display: inline-block;
+  padding: 12px;
+  color: var(--app-color-primary);
+  border-radius: 2rem;
+  background-color: color-mix(
+    in srgb,
+    var(--app-color-primary) 20%,
+    transparent
+  );
+}
