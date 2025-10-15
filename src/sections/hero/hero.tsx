@@ -4,14 +4,13 @@ import React from 'react';
 
 import { Button } from 'components/button/button';
 import { Container } from 'components/container/container';
-import { Section } from 'components/section/section';
 import { Space } from 'components/space/space';
 
 import styles from './styles.module.css';
 
 export const Hero: React.FC = () => {
   return (
-    <Section className={clsx(styles.section)}>
+    <div className={clsx(styles.wrapper)}>
       <Container className={styles.container}>
         <div className={styles.welcome}>
           <div>
@@ -57,6 +56,6 @@ export const Hero: React.FC = () => {
           </Space>
         </div>
       </Container>
-    </Section>
+    </div>
   );
 };

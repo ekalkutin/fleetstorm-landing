@@ -22,7 +22,7 @@ export const Section: React.FC<Props> = props => {
           <h2>{props.headline}</h2>
           <p>{props.description}</p>
         </div>
-        <div>{props.children}</div>
+        {props.children}
       </Container>
     </section>
   );
