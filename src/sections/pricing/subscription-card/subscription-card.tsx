@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import { Check } from 'lucide-react';
 import React from 'react';
 
+import { Button } from 'components/button/button';
 import { Card } from 'components/card/card';
 import { Icon } from 'components/icon/icon';
 
@@ -17,27 +18,39 @@ type Props = {
 
 export const SubscriptionCard: React.FC<Props> = props => {
   return (
-    <Card className={clsx(styles.card)}>
-      <div className={styles.headline}>
-        <h2>{props.title}</h2>
-        <p>{props.description}</p>
+    <Card
+      className={clsx(styles.card, {
+        [styles.primary]: props.primary,
+      })}
+    >
+      <div className={styles.inner}>
+        <div className={styles.headline}>
+          <h2>{props.title}</h2>
+          <p>{props.description}</p>
+        </div>
+        <Button
+          className={styles.button}
+          type={props.primary ? 'primary' : 'secondary'}
+        >
+          Начать бесплатно
+        </Button>
+        <ul className={styles.features}>
+          {props.features.map((featureName, index) => {
+            return (
+              <li key={index}>
+                <Icon
+                  className={clsx(styles.icon, {
+                    [styles.primary]: props.primary,
+                  })}
+                >
+                  <Check />
+                </Icon>
+                {featureName}
+              </li>
+            );
+          })}
+        </ul>
       </div>
-      <ul className={styles.features}>
-        {props.features.map((featureName, index) => {
-          return (
-            <li key={index}>
-              <Icon
-                className={clsx({
-                  [styles.primary]: props.primary,
-                })}
-              >
-                <Check />
-              </Icon>
-              {featureName}
-            </li>
-          );
-        })}
-      </ul>
     </Card>
   );
 };

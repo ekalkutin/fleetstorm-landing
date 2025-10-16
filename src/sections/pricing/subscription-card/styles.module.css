@@ -1,9 +1,25 @@
 .card {
   flex: 1;
+
+  &.primary {
+    border-color: blue;
+  }
+}
+
+.button {
+  height: 3rem;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
 }
 
 .headline {
   text-align: center;
+  min-height: 130px;
 
   h2 {
     font-weight: 400;
@@ -13,7 +29,13 @@
   }
 }
 
-.primary {
-  background-color: var(--app-color-primary) !important;
-  color: #fff !important;
+.icon {
+  &.primary {
+    background-color: var(--app-color-primary);
+    color: #fff;
+  }
+}
+
+.features {
+  width: 100%;
 }

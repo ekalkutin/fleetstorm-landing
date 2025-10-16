@@ -27,6 +27,9 @@ export const Pricing: React.FC = () => {
           );
         })}
       </div>
+      <div className={styles.help}>
+        Нужна помощь в выборе тарифа? Свяжитесь с нами
+      </div>
     </Section>
   );
 };
