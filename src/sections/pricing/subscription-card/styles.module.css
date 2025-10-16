@@ -1,0 +1,19 @@
+.card {
+  flex: 1;
+}
+
+.headline {
+  text-align: center;
+
+  h2 {
+    font-weight: 400;
+  }
+  p {
+    color: color-mix(in oklab, #1e293b 60%, transparent);
+  }
+}
+
+.primary {
+  background-color: var(--app-color-primary) !important;
+  color: #fff !important;
+}

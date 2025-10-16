@@ -5,7 +5,6 @@ import styles from './styles.module.css';
 
 type Props = {
   readonly className?: string;
-
   readonly size?: number;
   readonly children: React.ReactElement<{
     size?: number;
