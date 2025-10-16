@@ -1,0 +1,28 @@
+.footer {
+  padding: 2rem 0;
+  background-color: #1e293b;
+
+  color: color-mix(in oklab, #fff 70%, transparent);
+}
+
+.etc {
+  padding-top: 1rem;
+  border-top: 1px solid color-mix(in oklab, #fff 10%, transparent);
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+  gap: 24px;
+
+  @media (max-width: 750px) {
+    flex-wrap: wrap;
+
+    .links {
+      display: flex;
+      flex: 1;
+      div:not(:first-child) {
+        flex: 1;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -4,6 +4,7 @@ import { Features } from 'sections/features/features';
 import { Feedback } from 'sections/feedback/feedback';
 import { Hero } from 'sections/hero/hero';
 import { Pricing } from 'sections/pricing/pricing';
+import { Footer } from 'widgets/footer/footer';
 import { Layout } from 'widgets/layout/layout';
 
 import './styles/index.css';
@@ -16,6 +17,7 @@ export const App: React.FC = () => {
         <Features />
         <Feedback />
         <Pricing />
+        <Footer />
       </Layout>
     </React.Fragment>
   );
