@@ -4,13 +4,13 @@
 }
 
 .headline {
-  padding: 2rem;
+  padding: 2rem 0;
   text-align: center;
 
   h2 {
     font-size: 3rem;
     font-weight: 300;
-    margin: 1rem;
+    margin: 1rem 0;
   }
   p {
     font-weight: 300;
