@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+
+  @media (max-width: 867px) {
+    display: block;
+    div {
+      margin-bottom: 2rem;
+    }
+  }
+}
