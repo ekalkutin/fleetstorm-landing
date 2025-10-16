@@ -1,7 +1,9 @@
+import { Star } from 'lucide-react';
 import React from 'react';
 
 import { Card } from 'components/card/card';
 import { Section } from 'components/section/section';
+import { Space } from 'components/space/space';
 
 import { FEEDBACKS } from './constants';
 import styles from './styles.module.css';
@@ -17,7 +19,13 @@ export const Feedback: React.FC = () => {
         {FEEDBACKS.map((feedback, index) => {
           return (
             <Card key={index}>
-              <div>{feedback.rating}</div>
+              <div>
+                <Space>
+                  <Star fill='#fa3' color='' /> <Star fill='#fa3' color='' />
+                  <Star fill='#fa3' color='' /> <Star fill='#fa3' color='' />{' '}
+                  <Star fill='#fa3' color='' />
+                </Space>
+              </div>
               <div>{feedback.content}</div>
             </Card>
           );
