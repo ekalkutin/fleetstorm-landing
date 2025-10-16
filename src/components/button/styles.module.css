@@ -8,9 +8,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.primary {
-  color: var(--app-color-background);
-  background-color: var(--app-color-primary);
+  &.primary {
+    color: var(--app-color-background);
+    background-color: var(--app-color-primary);
+  }
+
+  &.text {
+    background-color: transparent;
+  }
 }

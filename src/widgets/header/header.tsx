@@ -13,13 +13,13 @@ export const Header: React.FC = () => {
         <nav>
           <div>Logo</div>
           <Space className={styles.links}>
-            <Button>Возможности</Button>
-            <Button>Демо</Button>
-            <Button>Стоимость</Button>
-            <Button>Контакты</Button>
+            <Button type='text'>Возможности</Button>
+            <Button type='text'>Демо</Button>
+            <Button type='text'>Стоимость</Button>
+            <Button type='text'>Контакты</Button>
           </Space>
           <Space>
-            <Button>Войти</Button>
+            <Button type='text'>Войти</Button>
             <Button type='primary'>Начать бесплатно</Button>
           </Space>
         </nav>
