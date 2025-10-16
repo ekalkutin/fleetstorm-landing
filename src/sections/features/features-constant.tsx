@@ -3,14 +3,16 @@ import { Calendar, Car, LayoutDashboard, LocationEditIcon } from 'lucide-react';
 export const FEATURES = [
   {
     title: 'Управление автопарком',
-    image: 'https://images.unsplash.com/photo-1514836876796-56c8ba8b2e3c',
+    image:
+      'https://goselfdriverwanda.com/wp-content/uploads/2024/08/Fleet-car-hire.jpg',
     icon: <Car />,
     description:
       'Полный контроль над вашим автопарком в режиме реального времени. Отслеживайте состояние каждого автомобиля, планируйте ТО и оптимизируйте использование.',
   },
   {
     title: 'Автоматизация бронирования',
-    image: 'https://images.unsplash.com/photo-1759489239510-d0401888d9b0',
+    image:
+      'https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1000,h_800/https://motionscloud.com/wp-content/uploads/2024/08/Car-rental-handover.png',
     icon: <Calendar />,
     description:
       'Умная система бронирования с моментальным подтверждением. Исключите двойные бронирования и автоматизируйте весь процесс от заявки до возврата.',
