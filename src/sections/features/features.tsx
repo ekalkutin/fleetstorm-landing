@@ -18,6 +18,8 @@ export const Features: React.FC = () => {
           return (
             <FeatureCard
               key={index}
+              icon={feature.icon}
+              imageUrl={feature.image}
               title={feature.title}
               description={feature.description}
             />

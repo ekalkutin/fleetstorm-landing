@@ -13,6 +13,11 @@
 
 .container {
   flex: 1;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  @media (max-width: 550px) {
+    padding-top: 200px;
+  }
 }
 
 .ctaButtonsGroup {

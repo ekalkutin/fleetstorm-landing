@@ -6,5 +6,8 @@
 
   div {
     flex: 1 0 calc(100% / 3);
+    @media (max-width: 750px) {
+      flex: 1 0 100%;
+    }
   }
 }
