@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  gap: 24px;
+
+  @media (max-width: 1000px) {
+    flex-wrap: wrap;
+  }
+}
+
+.feedbackCard {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.author {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
