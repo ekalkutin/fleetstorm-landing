@@ -12,6 +12,7 @@ export const Button: React.FC<Props> = props => {
     <button
       className={clsx(styles.button, props.className, {
         [styles.primary]: props.type === 'primary',
+        [styles.secondary]: props.type === 'secondary',
         [styles.text]: props.type === 'text',
       })}
     >

@@ -5,4 +5,11 @@
   color: var(--color-text);
   border: none;
   cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: var(--color-primary);
+  }
 }

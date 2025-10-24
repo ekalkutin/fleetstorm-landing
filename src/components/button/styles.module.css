@@ -2,19 +2,53 @@
   font-family: var(--font-sans);
   font-weight: 600;
   cursor: pointer;
-  border: 0;
+  border: 1px solid transparent;
   padding: 8px 16px;
   border-radius: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s ease;
 
   &.primary {
-    color: var(--app-color-background);
-    background-color: var(--app-color-primary);
+    color: var(--color-background);
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+
+    &:hover {
+      background-color: var(--color-primary-hover);
+      border-color: var(--color-primary-hover);
+    }
+
+    &:active {
+      background-color: var(--color-primary-active);
+      border-color: var(--color-primary-active);
+    }
+  }
+
+  &.secondary {
+    color: var(--color-background);
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+
+    &:hover {
+      background-color: var(--color-secondary-hover);
+      border-color: var(--color-secondary-hover);
+    }
+
+    &:active {
+      background-color: var(--color-secondary-active);
+      border-color: var(--color-secondary-active);
+    }
   }
 
   &.text {
     background-color: transparent;
+    color: var(--color-text);
+
+    &:hover {
+      background-color: var(--color-surface);
+      color: var(--color-primary);
+    }
   }
 }
