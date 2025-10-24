@@ -39,11 +39,7 @@ class ThemeSwitcher {
    * Apply theme to DOM using data attribute
    */
   private applyTheme(theme: Theme): void {
-    if (theme === 'light') {
-      document.documentElement.removeAttribute('data-theme');
-    } else {
-      document.documentElement.setAttribute('data-theme', theme);
-    }
+    document.documentElement.setAttribute('data-theme', theme);
   }
 
   /**

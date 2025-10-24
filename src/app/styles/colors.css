@@ -6,20 +6,19 @@
     /* Container constraint */
     --app-container-max-width: 1400px;
 
-    /* Primary and secondary colors as HEX - easy to work with */
-    --color-primary: #0fce42;
-    --color-secondary: #900cdc;
-
-    /* Surface lightness values for theme switching */
-    --surface-lightness: 98%;
-    --surface-secondary-lightness: 95%;
+    /* Text lightness values for OKLCH derivation */
     --text-lightness: 15%;
     --text-secondary-lightness: 45%;
   }
 }
 
 @layer themes {
-  :root {
+  /* Light theme (explicit) */
+  [data-theme='light'] {
+    /* Primary and background colors as HEX for light theme */
+    --color-primary: #28a353;
+    --color-background: #e5e6e5;
+
     /* Derived colors using color-mix from hex values */
     --color-primary-hover: color-mix(in oklch, var(--color-primary) 85%, black);
     --color-primary-active: color-mix(
@@ -28,20 +27,8 @@
       black
     );
 
-    --color-secondary-hover: color-mix(
-      in oklch,
-      var(--color-secondary) 85%,
-      black
-    );
-    --color-secondary-active: color-mix(
-      in oklch,
-      var(--color-secondary) 70%,
-      black
-    );
-
-    /* Surface colors using OKLCH */
-    --color-background: oklch(var(--surface-lightness) 0.005 280);
-    --color-surface: oklch(var(--surface-secondary-lightness) 0.01 280);
+    /* Surface colors derived from background using OKLCH */
+    --color-surface: color-mix(in oklch, var(--color-background) 95%, black);
 
     /* Text colors using OKLCH */
     --color-text: oklch(var(--text-lightness) 0.02 280);
@@ -58,12 +45,15 @@
 
   /* Dark theme */
   [data-theme='dark'] {
-    /* Invert lightness values for dark theme */
-    --surface-lightness: 12%;
-    --surface-secondary-lightness: 18%;
+    /* Primary and background colors as HEX for dark theme */
+    --color-primary: #34d15c;
+    --color-background: #101010;
+
+    /* Text lightness values for dark theme */
     --text-lightness: 90%;
     --text-secondary-lightness: 65%;
 
+    /* Derived colors using color-mix from hex values */
     --color-primary-hover: color-mix(in oklch, var(--color-primary) 85%, white);
     --color-primary-active: color-mix(
       in oklch,
@@ -71,20 +61,8 @@
       black
     );
 
-    --color-secondary-hover: color-mix(
-      in oklch,
-      var(--color-secondary) 85%,
-      white
-    );
-    --color-secondary-active: color-mix(
-      in oklch,
-      var(--color-secondary) 85%,
-      black
-    );
-
-    /* Surface colors using OKLCH */
-    --color-background: oklch(var(--surface-lightness) 0.01 280);
-    --color-surface: oklch(var(--surface-secondary-lightness) 0.015 280);
+    /* Surface colors derived from dark background using OKLCH */
+    --color-surface: color-mix(in oklch, var(--color-background) 95%, white);
 
     /* Text colors using OKLCH */
     --color-text: oklch(var(--text-lightness) 0.02 280);

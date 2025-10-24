@@ -38,11 +38,7 @@ export const SubscriptionCard: React.FC<Props> = props => {
           {props.features.map((featureName, index) => {
             return (
               <li key={index}>
-                <Icon
-                  className={clsx(styles.icon, {
-                    [styles.primary]: props.primary,
-                  })}
-                >
+                <Icon className={clsx(styles.icon)}>
                   <Check />
                 </Icon>
                 {featureName}

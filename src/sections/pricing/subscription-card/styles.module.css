@@ -1,8 +1,9 @@
 .card {
+  background-color: var(--color-surface);
   flex: 1;
 
   &.primary {
-    border-color: blue;
+    border-color: var(--color-border);
   }
 }
 
@@ -25,15 +26,13 @@
     font-weight: 400;
   }
   p {
-    color: color-mix(in oklab, #1e293b 60%, transparent);
+    color: var(--color-text);
   }
 }
 
 .icon {
-  &.primary {
-    background-color: var(--app-color-primary);
-    color: #fff;
-  }
+  background-color: var(--color-surface);
+  color: var(--color-text);
 }
 
 .features {

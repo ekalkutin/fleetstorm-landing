@@ -4,7 +4,7 @@ import React, { PropsWithChildren } from 'react';
 import styles from './styles.module.css';
 
 type Props = {
-  readonly type?: 'primary' | 'secondary' | 'text';
+  readonly type?: 'primary' | 'text';
   readonly className?: string;
 } & PropsWithChildren;
 export const Button: React.FC<Props> = props => {
@@ -12,7 +12,6 @@ export const Button: React.FC<Props> = props => {
     <button
       className={clsx(styles.button, props.className, {
         [styles.primary]: props.type === 'primary',
-        [styles.secondary]: props.type === 'secondary',
         [styles.text]: props.type === 'text',
       })}
     >
