@@ -7,6 +7,9 @@ import { Pricing } from 'sections/pricing/pricing';
 import { Footer } from 'widgets/footer/footer';
 import { Layout } from 'widgets/layout/layout';
 
+// Initialize theme system
+import 'app/theme-switcher';
+
 import './styles/index.css';
 
 export const App: React.FC = () => {
