@@ -1,0 +1,79 @@
+/* CSS Layers for proper cascade management */
+@layer base, themes;
+
+@layer base {
+  :root {
+    /* Container constraint */
+    --app-container-max-width: 1400px;
+
+    /* Text lightness values for OKLCH derivation */
+    --text-lightness: 15%;
+    --text-secondary-lightness: 45%;
+  }
+}
+
+@layer themes {
+  /* Light theme (explicit) */
+  [data-theme='light'] {
+    /* Primary and background colors as HEX for light theme */
+    --color-primary: #28a353;
+    --color-background: #e5e6e5;
+
+    /* Derived colors using color-mix from hex values */
+    --color-primary-hover: color-mix(in oklch, var(--color-primary) 85%, black);
+    --color-primary-active: color-mix(
+      in oklch,
+      var(--color-primary) 70%,
+      black
+    );
+
+    /* Surface colors derived from background using OKLCH */
+    --color-surface: color-mix(in oklch, var(--color-background) 95%, black);
+
+    /* Text colors using OKLCH */
+    --color-text: oklch(var(--text-lightness) 0.02 280);
+    --color-text-muted: oklch(var(--text-secondary-lightness) 0.03 280);
+
+    /* Border colors using color-mix */
+    --color-border: color-mix(in oklch, var(--color-text) 15%, transparent);
+    --color-border-light: color-mix(
+      in oklch,
+      var(--color-text) 8%,
+      transparent
+    );
+  }
+
+  /* Dark theme */
+  [data-theme='dark'] {
+    /* Primary and background colors as HEX for dark theme */
+    --color-primary: #34d15c;
+    --color-background: #101010;
+
+    /* Text lightness values for dark theme */
+    --text-lightness: 90%;
+    --text-secondary-lightness: 65%;
+
+    /* Derived colors using color-mix from hex values */
+    --color-primary-hover: color-mix(in oklch, var(--color-primary) 85%, white);
+    --color-primary-active: color-mix(
+      in oklch,
+      var(--color-primary) 85%,
+      black
+    );
+
+    /* Surface colors derived from dark background using OKLCH */
+    --color-surface: color-mix(in oklch, var(--color-background) 95%, white);
+
+    /* Text colors using OKLCH */
+    --color-text: oklch(var(--text-lightness) 0.02 280);
+    --color-text-muted: oklch(var(--text-secondary-lightness) 0.03 280);
+
+    /* Borders need higher opacity in dark mode */
+    --color-border: color-mix(in oklch, var(--color-text) 20%, transparent);
+    --color-border-light: color-mix(
+      in oklch,
+      var(--color-text) 12%,
+      transparent
+    );
+  }
+}

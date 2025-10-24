@@ -4,7 +4,7 @@ import React, { PropsWithChildren } from 'react';
 import styles from './styles.module.css';
 
 type Props = {
-  readonly type?: 'primary' | 'secondary' | 'text';
+  readonly type?: 'primary' | 'text';
   readonly className?: string;
 } & PropsWithChildren;
 export const Button: React.FC<Props> = props => {

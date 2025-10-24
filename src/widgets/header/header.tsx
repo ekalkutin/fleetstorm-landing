@@ -3,6 +3,7 @@ import React from 'react';
 import { Button } from 'components/button/button';
 import { Container } from 'components/container/container';
 import { Space } from 'components/space/space';
+import { ThemeToggle } from 'components/theme-toggle/theme-toggle';
 
 import styles from './styles.module.css';
 
@@ -19,6 +20,7 @@ export const Header: React.FC = () => {
             <Button type='text'>Контакты</Button>
           </Space>
           <Space>
+            <ThemeToggle />
             <Button type='text'>Войти</Button>
             <Button type='primary'>Начать бесплатно</Button>
           </Space>

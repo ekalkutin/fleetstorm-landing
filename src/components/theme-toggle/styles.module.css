@@ -1,0 +1,15 @@
+.container {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--color-text);
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}

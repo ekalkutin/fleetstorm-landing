@@ -1,13 +1,13 @@
 .footer {
   padding: 2rem 0;
-  background-color: #1e293b;
+  background-color: var(--color-background);
 
-  color: color-mix(in oklab, #fff 70%, transparent);
+  color: var(--color-text);
 }
 
 .etc {
   padding-top: 1rem;
-  border-top: 1px solid color-mix(in oklab, #fff 10%, transparent);
+  border-top: 1px solid var(--color-border);
   display: flex;
   justify-content: space-between;
   font-weight: 300;
