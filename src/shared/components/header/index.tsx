@@ -5,6 +5,8 @@ import { Container } from 'components/container/container';
 import { Space } from 'components/space/space';
 import { ThemeToggle } from 'components/theme-toggle/theme-toggle';
 
+import { Logo } from '../logo';
+
 import styles from './styles.module.css';
 
 export const Header: React.FC = () => {
@@ -12,7 +14,7 @@ export const Header: React.FC = () => {
     <header className={styles.header}>
       <Container>
         <nav>
-          <div>Logo</div>
+          <Logo />
           <Space className={styles.links}>
             <Button type='text'>Возможности</Button>
             <Button type='text'>Демо</Button>

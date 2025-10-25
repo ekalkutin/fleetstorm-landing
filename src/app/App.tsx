@@ -4,8 +4,8 @@ import { Features } from 'sections/features/features';
 import { Feedback } from 'sections/feedback/feedback';
 import { Hero } from 'sections/hero/hero';
 import { Pricing } from 'sections/pricing/pricing';
-import { Footer } from 'widgets/footer/footer';
-import { Layout } from 'widgets/layout/layout';
+import { Footer } from 'shared/components/footer';
+import { Layout } from 'shared/components/layout';
 
 // Initialize theme system
 import 'app/theme-switcher';

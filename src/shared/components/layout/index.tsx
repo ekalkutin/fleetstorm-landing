@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 
-import { Header } from '../header/header';
+import { Header } from 'shared/components/header';
 
 import styles from './styles.module.css';
 
