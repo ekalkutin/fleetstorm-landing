@@ -12,6 +12,7 @@
   flex-direction: column;
   gap: 32px;
   background-color: var(--color-surface);
+  color: var(--color-text);
 }
 
 .author {

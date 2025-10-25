@@ -17,7 +17,7 @@
   [data-theme='light'] {
     /* Primary and background colors as HEX for light theme */
     --color-primary: #28a353;
-    --color-background: #e5e6e5;
+    --color-background: #fcfcfc;
 
     /* Derived colors using color-mix from hex values */
     --color-primary-hover: color-mix(in oklch, var(--color-primary) 85%, black);
@@ -51,7 +51,7 @@
 
     /* Text lightness values for dark theme */
     --text-lightness: 90%;
-    --text-secondary-lightness: 65%;
+    --text-secondary-lightness: 60%;
 
     /* Derived colors using color-mix from hex values */
     --color-primary-hover: color-mix(in oklch, var(--color-primary) 85%, white);
@@ -66,7 +66,7 @@
 
     /* Text colors using OKLCH */
     --color-text: oklch(var(--text-lightness) 0.02 280);
-    --color-text-muted: oklch(var(--text-secondary-lightness) 0.03 280);
+    --color-text-muted: oklch(var(--text-secondary-lightness) 0 250);
 
     /* Borders need higher opacity in dark mode */
     --color-border: color-mix(in oklch, var(--color-text) 20%, transparent);

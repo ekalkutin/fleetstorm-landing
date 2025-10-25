@@ -6,7 +6,7 @@ import styles from './styles.module.css';
 export const Logo: React.FC = () => {
   return (
     <div className={clsx(styles.container)}>
-      Fleet<span>Pro</span>
+      <span>Fleet</span>Storm
     </div>
   );
 };

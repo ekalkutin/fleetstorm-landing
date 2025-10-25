@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Features } from 'sections/features/features';
 import { Feedback } from 'sections/feedback/feedback';
-import { Hero } from 'sections/hero/hero';
+import { Hero } from 'sections/hero';
 import { Pricing } from 'sections/pricing/pricing';
 import { Footer } from 'shared/components/footer';
 import { Layout } from 'shared/components/layout';

@@ -30,7 +30,7 @@ export const SubscriptionCard: React.FC<Props> = props => {
         </div>
         <Button
           className={styles.button}
-          type={props.primary ? 'primary' : 'secondary'}
+          type={props.primary ? 'primary' : 'text'}
         >
           Начать бесплатно
         </Button>
