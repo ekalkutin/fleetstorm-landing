@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Card } from 'components/card/card';
+import { Card } from 'shared/components/card/card';
 
 import styles from './styles.module.css';
 

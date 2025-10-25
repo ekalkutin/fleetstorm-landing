@@ -1,10 +1,10 @@
 import { Star } from 'lucide-react';
 import React from 'react';
 
-import { Avatar } from 'components/avatar/avatar';
-import { Card } from 'components/card/card';
-import { Section } from 'components/section/section';
-import { Space } from 'components/space/space';
+import { Avatar } from 'shared/components/avatar/avatar';
+import { Card } from 'shared/components/card/card';
+import { Section } from 'shared/components/section/section';
+import { Space } from 'shared/components/space/space';
 
 import { FEEDBACKS } from './constants';
 import styles from './styles.module.css';

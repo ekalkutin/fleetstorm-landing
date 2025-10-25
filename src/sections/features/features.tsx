@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Section } from 'components/section/section';
+import { Section } from 'shared/components/section/section';
 
 import { FeatureCard } from './components/feature-card/feature-card';
 import { FEATURES } from './features-constant';

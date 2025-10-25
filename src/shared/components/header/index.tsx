@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Button } from 'components/button/button';
-import { Container } from 'components/container/container';
-import { Space } from 'components/space/space';
-import { ThemeToggle } from 'components/theme-toggle/theme-toggle';
+import { Button } from 'shared/components/button/button';
+import { Container } from 'shared/components/container';
+import { Space } from 'shared/components/space/space';
+import { ThemeToggle } from 'shared/components/theme-toggle/theme-toggle';
 
 import { Logo } from '../logo';
 

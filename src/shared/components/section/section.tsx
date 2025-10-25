@@ -1,8 +1,8 @@
 import clsx from 'clsx';
 import React, { PropsWithChildren } from 'react';
 
-import { Badge } from 'components/badge/badge';
-import { Container } from 'components/container/container';
+import { Badge } from 'shared/components/badge';
+import { Container } from 'shared/components/container';
 
 import styles from './styles.module.css';
 

@@ -78,7 +78,6 @@ const configuration: Configuration = {
     extensions: ['.ts', '.tsx', '.js'],
     alias: {
       app: path.resolve(__dirname, 'src', 'app'),
-      components: path.resolve(__dirname, 'src', 'components'),
       sections: path.resolve(__dirname, 'src', 'sections'),
       shared: path.resolve(__dirname, 'src', 'shared'),
     },
