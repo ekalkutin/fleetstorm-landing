@@ -1,14 +1,24 @@
 /**
- * Simple theme switcher using modern CSS features
+ * Simple theme switcher - no persistence, just basic toggle
  */
 
 export type Theme = 'light' | 'dark';
+
+// Global function declaration
+declare global {
+  interface Window {
+    toggleTheme: () => void;
+  }
+}
 
 class ThemeSwitcher {
   private currentTheme: Theme = 'light';
 
   constructor() {
-    this.loadTheme();
+    // Only initialize on client side
+    if (typeof window !== 'undefined') {
+      this.applyTheme(this.currentTheme);
+    }
   }
 
   /**
@@ -17,7 +27,6 @@ class ThemeSwitcher {
   setTheme(theme: Theme): void {
     this.currentTheme = theme;
     this.applyTheme(theme);
-    this.saveTheme(theme);
   }
 
   /**
@@ -36,44 +45,19 @@ class ThemeSwitcher {
   }
 
   /**
-   * Apply theme to DOM using data attribute
+   * Apply theme to DOM using data attribute (client-side only)
    */
   private applyTheme(theme: Theme): void {
-    document.documentElement.setAttribute('data-theme', theme);
-  }
-
-  /**
-   * Load theme from localStorage or system preference
-   */
-  private loadTheme(): void {
-    const saved = localStorage.getItem('theme') as Theme;
-    if (saved && (saved === 'light' || saved === 'dark')) {
-      this.setTheme(saved);
-    } else {
-      // Use system preference as fallback
-      const prefersDark = window.matchMedia(
-        '(prefers-color-scheme: dark)',
-      ).matches;
-      this.setTheme(prefersDark ? 'dark' : 'light');
+    if (typeof document !== 'undefined') {
+      document.documentElement.setAttribute('data-theme', theme);
     }
-  }
-
-  /**
-   * Save theme to localStorage
-   */
-  private saveTheme(theme: Theme): void {
-    localStorage.setItem('theme', theme);
   }
 }
 
 // Create singleton instance
 export const themeSwitcher = new ThemeSwitcher();
 
-// Global function for easy access
-declare global {
-  interface Window {
-    toggleTheme: () => void;
-  }
+// Global function for easy access (client-side only)
+if (typeof window !== 'undefined') {
+  window.toggleTheme = () => themeSwitcher.toggle();
 }
-
-window.toggleTheme = () => themeSwitcher.toggle();
