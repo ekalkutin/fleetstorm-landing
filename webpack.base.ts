@@ -81,7 +81,6 @@ const configuration: Configuration = {
       components: path.resolve(__dirname, 'src', 'components'),
       sections: path.resolve(__dirname, 'src', 'sections'),
       shared: path.resolve(__dirname, 'src', 'shared'),
-      widgets: path.resolve(__dirname, 'src', 'widgets'),
     },
   },
   optimization: {
