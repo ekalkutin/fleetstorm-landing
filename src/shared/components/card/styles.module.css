@@ -3,9 +3,5 @@
   background-color: var(--color-surface);
   overflow: hidden;
   border-radius: 2rem;
-  padding: 24px;
-  h3 {
-    font-size: 2rem;
-    font-weight: 300;
-  }
+  padding: var(--space-md);
 }

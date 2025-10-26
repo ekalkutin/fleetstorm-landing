@@ -16,15 +16,22 @@ export const Header: React.FC = () => {
         <nav>
           <Logo />
           <Space className={styles.links}>
-            <Button type='text'>Возможности</Button>
-            <Button type='text'>Демо</Button>
-            <Button type='text'>Стоимость</Button>
-            <Button type='text'>Контакты</Button>
+            <Button size='small' type='text'>
+              Возможности
+            </Button>
+            <Button size='small' type='text'>
+              Демо
+            </Button>
+            <Button size='small' type='text'>
+              Стоимость
+            </Button>
+            <Button size='small' type='text'>
+              Контакты
+            </Button>
           </Space>
           <Space>
             <ThemeToggle />
-            <Button type='text'>Войти</Button>
-            <Button type='primary'>Начать бесплатно</Button>
+            <Button type='primary'>Войти</Button>
           </Space>
         </nav>
       </Container>

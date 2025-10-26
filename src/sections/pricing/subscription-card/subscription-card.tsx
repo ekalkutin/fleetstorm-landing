@@ -28,10 +28,7 @@ export const SubscriptionCard: React.FC<Props> = props => {
           <h2>{props.title}</h2>
           <p>{props.description}</p>
         </div>
-        <Button
-          className={styles.button}
-          type={props.primary ? 'primary' : 'text'}
-        >
+        <Button size='large' type={props.primary ? 'primary' : 'text'}>
           Начать бесплатно
         </Button>
         <ul className={styles.features}>

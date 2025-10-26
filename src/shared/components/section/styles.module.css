@@ -1,11 +1,11 @@
 .container {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: var(--space-xl) 0;
   background-color: var(--color-background);
 }
 
 .headline {
-  padding: 2rem 0;
+  padding: var(--space-xl) 0;
   text-align: center;
 }

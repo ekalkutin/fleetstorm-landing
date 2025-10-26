@@ -1,13 +1,12 @@
 .wrapper {
   display: flex;
-  gap: 24px;
+  gap: var(--space-xl);
   flex-wrap: wrap;
-  padding-bottom: 2rem;
 
   @media (max-width: 867px) {
     display: block;
     > div {
-      margin-bottom: 2rem;
+      margin-bottom: var(--space-xl);
     }
   }
 
@@ -16,17 +15,13 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: var(--space-xs);
     li {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: var(--space-xs);
       list-style: none;
       color: var(--color-text);
     }
   }
-}
-
-.help {
-  text-align: center;
 }

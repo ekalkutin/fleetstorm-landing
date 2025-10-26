@@ -1,10 +1,10 @@
 .text {
-  font-size: 1rem;
+  font-size: var(--font-size-md);
   font-weight: 300;
-  margin: 0.5rem 0;
+  margin: var(--space-xs) 0;
 
   &.small {
-    font-size: 0.8rem;
+    font-size: var(--font-size-sm);
   }
 
   &.large {

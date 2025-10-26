@@ -4,7 +4,7 @@
 }
 
 .content {
-  padding: 0 24px 24px;
+  padding: 0 var(--space-md) var(--space-md);
 }
 
 .icon {
@@ -17,8 +17,8 @@
   width: 50px;
   border-radius: 1rem;
   position: absolute;
-  bottom: 24px;
-  left: 24px;
+  bottom: var(--space-md);
+  left: var(--space-md);
 }
 
 .cover {

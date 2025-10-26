@@ -1,5 +1,5 @@
 .footer {
-  padding: 2rem 0;
+  padding: var(--space-mdxl) 0;
   background-color: var(--color-background);
 
   color: var(--color-text);
@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   font-weight: 300;
-  gap: 24px;
+  gap: var(--space-md);
 
   @media (max-width: 750px) {
     flex-wrap: wrap;

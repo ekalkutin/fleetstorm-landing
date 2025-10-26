@@ -7,10 +7,6 @@
   }
 }
 
-.button {
-  height: 3rem;
-}
-
 .inner {
   display: flex;
   flex-direction: column;
