@@ -2,9 +2,9 @@ import clsx from 'clsx';
 import { Check, Zap, Lock } from 'lucide-react';
 import React from 'react';
 
-import { Button } from 'shared/components/button/button';
+import { Button } from 'shared/components/button';
 import { Container } from 'shared/components/container';
-import { Space } from 'shared/components/space/space';
+import { Space } from 'shared/components/space';
 
 import styles from './styles.module.css';
 
@@ -17,7 +17,7 @@ export const Hero: React.FC = () => {
           <h2>нового поколения</h2>
         </div>
         <div className={styles.cta}>
-          <Button>Попробовать бесплатно</Button>
+          <Button size='large'>Попробовать бесплатно</Button>
         </div>
         <Space className={styles.benefits}>
           <div className={styles.benefit}>

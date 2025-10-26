@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Container } from 'shared/components/container';
-import { Space } from 'shared/components/space/space';
+import { Space } from 'shared/components/space';
 
 import styles from './styles.module.css';
 

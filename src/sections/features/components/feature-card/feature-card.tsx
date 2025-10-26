@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Card } from 'shared/components/card/card';
+import { Typography } from 'shared/components/typography';
 
 import styles from './styles.module.css';
 
@@ -20,7 +21,8 @@ export const FeatureCard: React.FC<Props> = props => {
       </div>
       <div className={styles.content}>
         <h3>{props.title}</h3>
-        <p>{props.description}</p>
+
+        <Typography.Text muted>{props.description}</Typography.Text>
       </div>
     </Card>
   );

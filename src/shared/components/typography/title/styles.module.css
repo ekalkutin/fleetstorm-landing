@@ -1,0 +1,11 @@
+.title {
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 1rem 0;
+
+  color: var(--color-text);
+
+  &.muted {
+    color: var(--color-text-muted);
+  }
+}

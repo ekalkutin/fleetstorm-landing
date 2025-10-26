@@ -2,9 +2,9 @@ import clsx from 'clsx';
 import { ArrowRight, Check, Lock, Zap } from 'lucide-react';
 import React from 'react';
 
-import { Button } from 'shared/components/button/button';
+import { Button } from 'shared/components/button';
 import { Container } from 'shared/components/container';
-import { Space } from 'shared/components/space/space';
+import { Space } from 'shared/components/space';
 
 import styles from './styles.module.css';
 

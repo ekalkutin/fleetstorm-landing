@@ -1,15 +1,4 @@
-/**
- * Simple theme switcher - no persistence, just basic toggle
- */
-
 export type Theme = 'light' | 'dark';
-
-// Global function declaration
-declare global {
-  interface Window {
-    toggleTheme: () => void;
-  }
-}
 
 class ThemeSwitcher {
   private currentTheme: Theme = 'light';
@@ -54,10 +43,4 @@ class ThemeSwitcher {
   }
 }
 
-// Create singleton instance
 export const themeSwitcher = new ThemeSwitcher();
-
-// Global function for easy access (client-side only)
-if (typeof window !== 'undefined') {
-  window.toggleTheme = () => themeSwitcher.toggle();
-}

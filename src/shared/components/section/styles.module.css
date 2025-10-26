@@ -8,14 +8,4 @@
 .headline {
   padding: 2rem 0;
   text-align: center;
-
-  h2 {
-    font-size: 3rem;
-    font-weight: 300;
-    margin: 1rem 0;
-  }
-  p {
-    font-weight: 300;
-    font-size: 1.2rem;
-  }
 }

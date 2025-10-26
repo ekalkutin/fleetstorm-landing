@@ -4,6 +4,8 @@ import React, { PropsWithChildren } from 'react';
 import { Badge } from 'shared/components/badge';
 import { Container } from 'shared/components/container';
 
+import { Typography } from '../typography';
+
 import styles from './styles.module.css';
 
 type Props = {
@@ -19,8 +21,8 @@ export const Section: React.FC<Props> = props => {
       <Container>
         <div className={styles.headline}>
           <Badge>{props.name}</Badge>
-          <h2>{props.headline}</h2>
-          <p>{props.description}</p>
+          <Typography.Title as='h2'>{props.headline}</Typography.Title>
+          <Typography.Text>{props.description}</Typography.Text>
         </div>
         {props.children}
       </Container>

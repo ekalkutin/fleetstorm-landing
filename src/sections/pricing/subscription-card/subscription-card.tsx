@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { Check } from 'lucide-react';
 import React from 'react';
 
-import { Button } from 'shared/components/button/button';
+import { Button } from 'shared/components/button';
 import { Card } from 'shared/components/card/card';
 import { Icon } from 'shared/components/icon/icon';
 

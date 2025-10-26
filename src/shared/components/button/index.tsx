@@ -5,6 +5,7 @@ import styles from './styles.module.css';
 
 type Props = {
   readonly type?: 'primary' | 'text';
+  readonly size?: 'small' | 'large';
   readonly className?: string;
 } & PropsWithChildren;
 export const Button: React.FC<Props> = props => {
@@ -13,6 +14,8 @@ export const Button: React.FC<Props> = props => {
       className={clsx(styles.button, props.className, {
         [styles.primary]: props.type === 'primary',
         [styles.text]: props.type === 'text',
+        [styles.small]: props.size === 'small',
+        [styles.large]: props.size === 'large',
       })}
     >
       {props.children}

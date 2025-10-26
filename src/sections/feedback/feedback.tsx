@@ -4,7 +4,7 @@ import React from 'react';
 import { Avatar } from 'shared/components/avatar/avatar';
 import { Card } from 'shared/components/card/card';
 import { Section } from 'shared/components/section/section';
-import { Space } from 'shared/components/space/space';
+import { Space } from 'shared/components/space';
 
 import { FEEDBACKS } from './constants';
 import styles from './styles.module.css';

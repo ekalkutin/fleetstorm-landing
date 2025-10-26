@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --config webpack.client.ts",
+    "start:server": "cross-env NODE_ENV=production webpack serve --config webpack.server.ts",
     "build": "npm run build:client && npm run build:server",
     "build:client": "cross-env NODE_ENV=production webpack --config webpack.client.ts",
     "build:server": "cross-env NODE_ENV=production webpack --config webpack.server.ts",

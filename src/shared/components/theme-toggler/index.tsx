@@ -6,7 +6,7 @@ import { themeSwitcher, type Theme } from 'app/theme-switcher';
 import styles from './styles.module.css';
 
 export const ThemeToggle: React.FC = () => {
-  const [theme, setTheme] = useState<Theme>(themeSwitcher.getTheme());
+  const [theme, setTheme] = useState<Theme>('light');
 
   useEffect(() => {
     setTheme(themeSwitcher.getTheme());
