@@ -1,14 +1,15 @@
 import clsx from 'clsx';
 import React, { PropsWithChildren } from 'react';
 
-import { TypographyProps } from '../props';
+import sharedStyles from '../shared.module.css';
 
 import styles from './styles.module.css';
 
 type Props = {
   readonly as?: 'p' | 'span';
-} & TypographyProps &
-  PropsWithChildren;
+  readonly muted?: boolean;
+  readonly size?: 'small' | 'large';
+} & PropsWithChildren;
 
 export const Text: React.FC<Props> = props => {
   const { as, children } = props;
@@ -16,8 +17,8 @@ export const Text: React.FC<Props> = props => {
 
   return (
     <Component
-      className={clsx(styles.text, {
-        [styles.muted]: props.muted,
+      className={clsx(sharedStyles.typography, {
+        [sharedStyles.muted]: props.muted,
         [styles.small]: props.size === 'small',
         [styles.large]: props.size === 'large',
       })}
