@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { ThemeProvider, type Theme } from 'app/theme';
 import { Features } from 'sections/features/features';
 import { Feedback } from 'sections/feedback/feedback';
 import { Hero } from 'sections/hero';
@@ -7,14 +8,15 @@ import { Pricing } from 'sections/pricing/pricing';
 import { Footer } from 'shared/components/footer';
 import { Layout } from 'shared/components/layout';
 
-// Initialize theme system
-import 'app/theme-switcher';
-
 import './styles/index.css';
 
-export const App: React.FC = () => {
+interface AppProps {
+  initialTheme?: Theme;
+}
+
+export const App: React.FC<AppProps> = ({ initialTheme = 'light' }) => {
   return (
-    <React.Fragment>
+    <ThemeProvider initialTheme={initialTheme}>
       <Layout>
         <Hero />
         <Features />
@@ -22,6 +24,6 @@ export const App: React.FC = () => {
         <Pricing />
         <Footer />
       </Layout>
-    </React.Fragment>
+    </ThemeProvider>
   );
 };

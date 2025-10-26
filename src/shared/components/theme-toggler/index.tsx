@@ -1,25 +1,16 @@
 import { Moon, Sun } from 'lucide-react';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-import { themeSwitcher, type Theme } from 'app/theme-switcher';
+import { useTheme } from 'app/theme';
 
 import styles from './styles.module.css';
 
 export const ThemeToggle: React.FC = () => {
-  const [theme, setTheme] = useState<Theme>('light');
-
-  useEffect(() => {
-    setTheme(themeSwitcher.getTheme());
-  }, []);
-
-  const handleToggle = () => {
-    themeSwitcher.toggle();
-    setTheme(themeSwitcher.getTheme());
-  };
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <button
-      onClick={handleToggle}
+      onClick={toggleTheme}
       className={styles.container}
       title={`Switch to ${theme === 'light' ? 'dark' : 'light'} theme`}
     >

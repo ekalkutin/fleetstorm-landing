@@ -2,5 +2,7 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 
 import { App } from './App';
+import { type Theme } from './theme';
 
-export default () => renderToString(React.createElement(App));
+export default (theme: Theme = 'light') =>
+  renderToString(React.createElement(App, { initialTheme: theme }));
