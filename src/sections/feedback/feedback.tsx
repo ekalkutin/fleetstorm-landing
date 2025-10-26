@@ -2,8 +2,8 @@ import { Star } from 'lucide-react';
 import React from 'react';
 
 import { Avatar } from 'shared/components/avatar/avatar';
-import { Card } from 'shared/components/card/card';
-import { Section } from 'shared/components/section/section';
+import { Card } from 'shared/components/card';
+import { Section } from 'shared/components/section';
 import { Space } from 'shared/components/space';
 
 import { FEEDBACKS } from './constants';

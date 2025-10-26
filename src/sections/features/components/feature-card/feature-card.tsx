@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Card } from 'shared/components/card/card';
+import { Card } from 'shared/components/card';
 import { Typography } from 'shared/components/typography';
 
 import styles from './styles.module.css';

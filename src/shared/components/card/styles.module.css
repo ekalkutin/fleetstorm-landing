@@ -1,5 +1,6 @@
 .container {
-  border: 1px solid rgba(30, 41, 59, 0.1);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-surface);
   overflow: hidden;
   border-radius: 2rem;
   padding: 24px;

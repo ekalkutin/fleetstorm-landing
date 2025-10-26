@@ -3,7 +3,7 @@ import { Check } from 'lucide-react';
 import React from 'react';
 
 import { Button } from 'shared/components/button';
-import { Card } from 'shared/components/card/card';
+import { Card } from 'shared/components/card';
 import { Icon } from 'shared/components/icon/icon';
 
 import styles from './styles.module.css';

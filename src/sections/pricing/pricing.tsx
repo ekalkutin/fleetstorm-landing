@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Section } from 'shared/components/section/section';
+import { Section } from 'shared/components/section';
 
 import styles from './styles.module.css';
 import { SubscriptionCard } from './subscription-card/subscription-card';

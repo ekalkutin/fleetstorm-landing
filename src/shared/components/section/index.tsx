@@ -22,7 +22,7 @@ export const Section: React.FC<Props> = props => {
         <div className={styles.headline}>
           <Badge>{props.name}</Badge>
           <Typography.Title as='h2'>{props.headline}</Typography.Title>
-          <Typography.Text>{props.description}</Typography.Text>
+          <Typography.Text muted>{props.description}</Typography.Text>
         </div>
         {props.children}
       </Container>
