@@ -27,7 +27,7 @@ export const Feedback: React.FC = () => {
                   <Star fill='#fa3' color='' />
                 </Space>
               </div>
-              <div>{feedback.content}</div>
+              <div style={{ flex: 1 }}>{feedback.content}</div>
               <div className={styles.author}>
                 <Avatar imageUrl='https://images.unsplash.com/photo-1709715357520-5e1047a2b691?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHRlYW0lMjBtZWV0aW5nfGVufDF8fHx8MTc2MDIyMjczN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral&quot' />
                 <div>

@@ -10,8 +10,8 @@ import styles from './styles.module.css';
 export const WhyUs: React.FC = () => {
   return (
     <Section
-      headline='Наши преимущества'
-      description='Конкретные цифры и факты о том, как FleetPro помогает бизнесу расти быстрее'
+      headline='Почему именно мы?'
+      description='Мощные инструменты для автоматизации и масштабирования бизнеса'
       name='Проверено на 5000+ компаниях'
     >
       <div className={styles.container}>

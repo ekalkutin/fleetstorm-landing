@@ -1,14 +1,14 @@
 .text {
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-body-md);
   font-weight: 300;
   margin: var(--space-xs) 0;
 
   &.small {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-body-sm);
   }
 
   &.large {
-    font-size: 1.2rem;
+    font-size: var(--font-size-body-lg);
   }
 
   &.monospace {

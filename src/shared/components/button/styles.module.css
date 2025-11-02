@@ -1,6 +1,6 @@
 .button {
   font-family: var(--font-sans);
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-body-md);
   font-weight: 600;
   cursor: pointer;
   border: 1px solid transparent;
@@ -54,11 +54,11 @@
   }
 
   &.small {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-body-sm);
   }
 
   &.large {
     padding: var(--space-xs) var(--space-lg);
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-body-lg);
   }
 }
